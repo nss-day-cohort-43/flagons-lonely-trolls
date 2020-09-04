@@ -27,7 +27,7 @@ export const renderPlayerForm = (teamList) => {
         </form>
         `
 
-        document.getElementById("leftAside").innerHTML += form
+        document.getElementById("leftAside").innerHTML = form
 }
 
 
@@ -38,8 +38,10 @@ export const PlayerFormComponent = () =>{
         renderPlayerForm(useTeams());
     })
 
-    eventHub.addEventListener
-} 
-
-
-//teamStateChanged event listener
+    eventHub.addEventListener("teamStateChanged", () => {
+        getTeams()
+        .then(() => {
+            renderPlayerForm(useTeams());
+        })
+    })
+}
