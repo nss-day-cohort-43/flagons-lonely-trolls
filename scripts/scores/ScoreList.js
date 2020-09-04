@@ -8,7 +8,8 @@ export const ScoreList = () => {
 
     // Add a section, and all of the fish to the DOM
     contentElement.innerHTML += `
-        <section id="scoreContainer>
+        <section id="scoreContainer">
+            <h2>Scores</h2>
             ${scoreArray.map(score => Score(score)).join("")}
         </section>
     `
