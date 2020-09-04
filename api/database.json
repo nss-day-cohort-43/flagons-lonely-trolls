@@ -27,6 +27,20 @@
       "dateCreated": "8/14/2020",
       "totalScore": 54,
       "teamSize": 1
+    },
+    {
+      "name": "The Jeffs",
+      "dateCreated": 1599249561703,
+      "totalScore": 0,
+      "teamSize": 0,
+      "id": 5
+    },
+    {
+      "name": "Happy Hippos",
+      "dateCreated": 1599249674832,
+      "totalScore": 0,
+      "teamSize": 0,
+      "id": 6
     }
   ],
   "players": [],

@@ -10,7 +10,7 @@ export const TeamFormComponent = () => {
         </form>
         `
 
-        document.getElementById("leftAside").innerHTML += form
+        document.getElementById("teamForm").innerHTML += form
 }
 
 const eventHub = document.querySelector("body")
