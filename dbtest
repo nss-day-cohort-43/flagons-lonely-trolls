@@ -4,7 +4,7 @@ team:
     "teamName":
     "dateCreated":
     "totalScore": 
-
+    "teamSize":
 }
 
 scores.json: 
