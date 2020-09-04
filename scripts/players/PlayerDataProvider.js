@@ -63,3 +63,7 @@ const players = [
     teamId: 3
 },
 ]
+
+export const usePlayers = () => {
+    return players.slice()
+}
