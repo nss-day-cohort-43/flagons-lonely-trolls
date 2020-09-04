@@ -1,5 +1,5 @@
 import { getTeams, useTeams } from "../teams/TeamDataProvider.js"
-
+const eventHub = document.getElementById("main")
 
 export const renderPlayerForm = (teamList) => {
     const form = `
