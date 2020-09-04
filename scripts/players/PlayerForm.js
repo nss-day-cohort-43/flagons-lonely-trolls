@@ -31,7 +31,7 @@ export const renderPlayerForm = (teamList) => {
         </form>
         `
 
-        document.getElementById("leftAside").innerHTML = form
+        document.getElementById("playerForm").innerHTML = form
 }
 
 
