@@ -36,3 +36,7 @@ const scores = [
         score: 54
     },
 ]
+
+export const useScores = () => {
+    return scores.slice()
+}
