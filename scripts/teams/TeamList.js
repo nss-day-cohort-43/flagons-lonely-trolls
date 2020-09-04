@@ -1,16 +1,21 @@
-import { useTeams } from "./TeamDataProvider.js"
+import { useTeams, getTeams } from "./TeamDataProvider.js"
 import { Team } from "./Team.js"
 
+
 export const TeamList = () => {
+    getTeams()
+        .then(() => {
+            const teamArray = useTeams();
+            addTeamsToDOM(teamArray)
+            }
+        )
+}
 
-    const contentElement = document.querySelector("body")
-    const teamArray = useTeams()
-
-    // Add a section, and all of the fish to the DOM
-    contentElement.innerHTML += `
-        <section id="teamContainer">
-            <h2>Teams</h2>
-            ${teamArray.map(team => Team(team)).join("")}
-        </section>
+const addTeamsToDOM = arrayOfTeams => {
+    const domElement = document.querySelector("#teamContainer")
+    let HTMLArray = arrayOfTeams.map(team => Team(team))
+    domElement.innerHTML = `
+        <h2>Teams</h2>
+            ${HTMLArray.join("")}
     `
 }
