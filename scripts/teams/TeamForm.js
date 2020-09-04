@@ -1,10 +1,10 @@
 export const TeamFormComponent = () => {
     const form = `
         <form>
-            <fieldset id="teamName">
-                <input type="text" name="concepts" id="concepts" maxlength="15" placeholder="Team name">
+            <fieldset id="teamNameField">
+                <input type="text" name="teamName" id="teamName" maxlength="15" placeholder="Team Name">
             </fieldset> 
-            <button type="button" id="createTeambtn">Create Team</button>
+            <button type="button" id="createTeamBtn">Create Team</button>
         </form>
         `
 
