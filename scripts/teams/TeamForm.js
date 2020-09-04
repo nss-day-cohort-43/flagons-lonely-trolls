@@ -1,6 +1,6 @@
 export const TeamFormComponent = () => {
     const form = `
-        <form action="">
+        <form>
             <fieldset id="teamName">
                 <input type="text" name="concepts" id="concepts" maxlength="15" placeholder="Team name">
             </fieldset> 
