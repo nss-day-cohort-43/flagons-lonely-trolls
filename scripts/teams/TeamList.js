@@ -8,8 +8,8 @@ export const TeamList = () => {
 
     // Add a section, and all of the fish to the DOM
     contentElement.innerHTML += `
-        <ul>
+        <section id="teamContainer>
             ${teamArray.map(team => Team(team)).join("")}
-        </ul>
+        </section>
     `
 }
