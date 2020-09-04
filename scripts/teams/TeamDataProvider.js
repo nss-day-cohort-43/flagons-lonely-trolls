@@ -1,6 +1,6 @@
 let teams = []
 
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector("body")
 
 const dispatchStateChangeEvent = () => {
     const teamStateChangedEvent = new CustomEvent("teamStateChanged")
