@@ -19,3 +19,4 @@ const addTeamsToDOM = arrayOfTeams => {
             ${HTMLArray.join("")}
     `
 }
+
