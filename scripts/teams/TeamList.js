@@ -1,6 +1,7 @@
 import { useTeams, getTeams } from "./TeamDataProvider.js"
 import { Team } from "./Team.js"
 
+const eventHub = document.querySelector("body")
 
 export const TeamList = () => {
     getTeams()
@@ -29,3 +30,10 @@ const addTeamsToLeaderboard = arrayOfTeams => {
     `
 }
 
+
+eventHub.addEventListener("teamStateChanged", () => {
+    getTeams()
+    .then(() => {
+        addTeamsToLeaderboard(useTeams());
+    })
+})
