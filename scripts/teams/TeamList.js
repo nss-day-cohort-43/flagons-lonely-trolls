@@ -6,17 +6,17 @@ export const TeamList = () => {
     getTeams()
         .then(() => {
             const teamArray = useTeams();
-            addTeamsToDOM(teamArray)
+            addTeamsToLeaderboard(teamArray)
             }
         )
 }
 
-const addTeamsToDOM = arrayOfTeams => {
-    const domElement = document.querySelector("#teamContainer")
+const addTeamsToLeaderboard = arrayOfTeams => {
+    const domElement = document.querySelector("#leaderboard")
     let HTMLArray = arrayOfTeams.map(team => Team(team))
     domElement.innerHTML = `
-        <h2>Teams</h2>
-            ${HTMLArray.join("")}
+        <h2>Leaderboard</h2>
+        ${HTMLArray.join("")}
     `
 }
 
