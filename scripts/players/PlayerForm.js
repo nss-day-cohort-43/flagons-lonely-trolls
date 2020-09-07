@@ -1,4 +1,5 @@
 import { getTeams, useTeams } from "../teams/TeamDataProvider.js"
+import { savePlayer } from "./PlayerDataProvider.js"
 
 const eventHub = document.querySelector("body")
 
@@ -16,12 +17,13 @@ export const renderPlayerForm = (teamList) => {
             </fieldset> 
             <fieldset>
             <select name="team" id="selectOpenTeam">
-                <option value=0>Please select a team...</option>
+                <option value="0">Please select a team...</option>
                 ${
                     teamList.map( teamObj => {
                         if (teamObj.teamSize < 3) {
                             const openTeam = teamObj.name;
-                            return`<option value=${openTeam}>${openTeam}</option>`
+                            const openTeamId = teamObj.id
+                            return`<option value=${openTeamId}>${openTeam}</option>`
                         }
                     })               
                 }
@@ -49,3 +51,22 @@ export const PlayerFormComponent = () =>{
         })
     })
 }
+
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "addPlayerBtn") {
+        const playerFirstNameInput = document.querySelector("#firstName")
+        const playerLastNameInput = document.querySelector("#lastName")
+        const playerOriginInput = document.querySelector("#origin")
+        const playerTeamInput = document.querySelector("#selectOpenTeam")
+        if (playerFirstNameInput.value !== "" && playerLastNameInput.value !== "" && playerOriginInput.value !== "" && playerTeamInput.value !== "0") {
+            const newPlayer = {
+                "name": playerFirstNameInput.value,
+                "lastName": playerLastNameInput.value,
+                "countryOrigin": playerOriginInput.value,
+                "teamId": playerTeamInput.value
+            }
+            savePlayer(newPlayer)
+            // .then(() => teamInput.value = "")
+        }
+    }
+})

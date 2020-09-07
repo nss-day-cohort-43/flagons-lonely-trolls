@@ -60,10 +60,298 @@
       "name": "Olde GReg",
       "dateCreated": 1599508540422,
       "totalScore": 0,
-      "teamSize": 0,
+      "teamSize": 1,
       "id": 9
     }
   ],
-  "players": [],
+  "players": [
+    {
+      "id": 1,
+      "name": "Joe",
+      "lastName": "Overton",
+      "countryOrigin": "USA",
+      "teamId": 2
+    },
+    {
+      "id": 2,
+      "name": "Rick",
+      "lastName": "Blake",
+      "countryOrigin": "USA",
+      "teamId": 1
+    },
+    {
+      "id": 3,
+      "name": "Colin",
+      "lastName": "Arel",
+      "countryOrigin": "USA",
+      "teamId": 1
+    },
+    {
+      "id": 4,
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "USA",
+      "teamId": 1
+    },
+    {
+      "id": 5,
+      "name": "Parker",
+      "lastName": "Kelley",
+      "countryOrigin": "USA",
+      "teamId": 2
+    },
+    {
+      "id": 6,
+      "name": "Wilhelm",
+      "lastName": "Schmdit",
+      "countryOrigin": "Deutchland",
+      "teamId": 3
+    },
+    {
+      "id": 7,
+      "name": "Jet",
+      "lastName": "Li",
+      "countryOrigin": "China",
+      "teamId": 2
+    },
+    {
+      "id": 8,
+      "name": "Eddie",
+      "lastName": "Murphy",
+      "countryOrigin": "USA",
+      "teamId": 3
+    },
+    {
+      "id": 9,
+      "name": "Denis",
+      "lastName": "Nedry",
+      "countryOrigin": "USA",
+      "teamId": 3
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "Happy",
+      "id": 10
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "Happy",
+      "id": 11
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "Happy",
+      "id": 12
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "Shiny",
+      "id": 13
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "Olde",
+      "id": 14
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "6",
+      "id": 15
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 16
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 17
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 18
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 19
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 20
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 21
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 22
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 23
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 24
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 25
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 26
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 27
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 28
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 29
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 30
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 31
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 32
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 33
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 34
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 35
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 36
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 37
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 38
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 39
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 40
+    },
+    {
+      "name": "Hanako",
+      "lastName": "Hashiguchi",
+      "countryOrigin": "United States",
+      "teamId": "9",
+      "id": 41
+    }
+  ],
   "scores": []
 }
