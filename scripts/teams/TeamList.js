@@ -1,12 +1,14 @@
-import { useTeams, getTeams } from "./TeamDataProvider.js"
+import { useTeams, getTeams, updateTeam } from "./TeamDataProvider.js"
 import { Team } from "./Team.js"
 
 const eventHub = document.querySelector("body")
 
+let teamArray = []
+
 export const TeamList = () => {
     getTeams()
         .then(() => {
-            const teamArray = useTeams();
+            teamArray = useTeams();
             addTeamsToLeaderboard(teamArray)
             }
         )
@@ -35,5 +37,14 @@ eventHub.addEventListener("teamStateChanged", () => {
     getTeams()
     .then(() => {
         addTeamsToLeaderboard(useTeams());
+    })
+})
+
+eventHub.addEventListener("playerStateChanged", event => {
+    teamArray.map(team => {
+        if (team.id === event.detail.playerTeamId) {
+            team.teamSize++
+            updateTeam(team)
+        }
     })
 })

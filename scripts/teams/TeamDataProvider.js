@@ -27,3 +27,14 @@ export const saveTeam = team => {
     .then(getTeams)
     .then(dispatchStateChangeEvent)
 }
+
+export const updateTeam = (teamObj) => {
+    return fetch(`http://localhost:8088/teams/${teamObj.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(teamObj)
+    })
+    .then(dispatchStateChangeEvent)
+}

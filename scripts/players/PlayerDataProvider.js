@@ -2,8 +2,12 @@ const players = []
 
 const eventHub = document.querySelector("body")
 
-const dispatchStateChangeEvent = () => {
-    const teamStateChangedEvent = new CustomEvent("playerStateChanged")
+const dispatchStateChangeEvent = (player) => {
+    const playerStateChangedEvent = new CustomEvent("playerStateChanged", {
+        detail: {
+            playerTeamId: parseInt(player.teamId)
+        }
+    })
 
     eventHub.dispatchEvent(playerStateChangedEvent)
 }
@@ -12,13 +16,13 @@ export const usePlayers = () => {
     return players.slice()
 }
 
-export const getplayers = () => {
-    return fetch('http://localhost:8088/players')
-        .then(response => response.json())
-        .then(parsedplayers => players = parsedplayers)
-}
+// export const getPlayers = () => {
+//     return fetch('http://localhost:8088/players')
+//         .then(response => response.json())
+//         .then(parsedPlayers => players = parsedPlayers)
+// }
 
-export const saveplayer = player => {
+export const savePlayer = player => {
     return fetch('http://localhost:8088/players', {
         method: "POST",
         headers: {
@@ -26,6 +30,5 @@ export const saveplayer = player => {
         },
         body: JSON.stringify(player)
     })
-    .then(getplayers)
-    .then(dispatchStateChangeEvent)
+    .then(() => dispatchStateChangeEvent(player))
 }
