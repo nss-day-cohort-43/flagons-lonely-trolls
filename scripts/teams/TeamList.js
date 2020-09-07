@@ -1,6 +1,7 @@
 import { useTeams, getTeams } from "./TeamDataProvider.js"
 import { Team } from "./Team.js"
 
+const eventHub = document.querySelector("body")
 
 export const TeamList = () => {
     getTeams()
@@ -13,9 +14,26 @@ export const TeamList = () => {
 
 const addTeamsToLeaderboard = arrayOfTeams => {
     const domElement = document.querySelector("#leaderboard")
-    let HTMLArray = arrayOfTeams.map(team => Team(team))
+    const sortedTeams = arrayOfTeams.sort(({totalScore:a},{totalScore:b}) => b-a) 
+    let HTMLArray = sortedTeams.map(team => Team(team))
+
     domElement.innerHTML = `
         <h2>Leaderboard</h2>
-        ${HTMLArray.join("")}
+        <table id="leaderboard-table">
+            <tr>
+                <th class="column1">Team Name</th>
+                <th>Players</th>
+                <th>Score</th>
+            </tr>
+            ${HTMLArray.join("")}
+        </table>        
     `
 }
+
+
+eventHub.addEventListener("teamStateChanged", () => {
+    getTeams()
+    .then(() => {
+        addTeamsToLeaderboard(useTeams());
+    })
+})
