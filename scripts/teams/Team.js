@@ -1,20 +1,13 @@
   
 export const Team = (teamObj) => {
     return `
-        <table id="team-${teamObj.id}">
-            <tr>
-            <th>Name</th>
-            <th>Player</th>
-            <th>score</th>
-            </tr>
-            <tr>
-            <td>${teamObj.name}</td>
+        <tr id="team-${teamObj.id}">
+            <td class="column1">${teamObj.name}</td>
             <td>${teamObj.teamSize}</td>
             <td>${teamObj.totalScore}</td>
-            </tr>
-        </table>
-      
-`
+        </tr>      
+    `
+}
 
 //             <li class="teamProps">Team: ${teamObj.name}</li>
 //             <li class="teamProps">Date Formed: ${teamObj.dateCreated}</li>
