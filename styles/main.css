@@ -1,31 +1,30 @@
 html, body {
-    height:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
 
 #container {
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    width : 100vw;
-    height : 100%;
-    padding:0;
-    margin:0;
+    height: 100%;
 }
 
-
 #leftAside {
-    flex: 1;
-    height: 100%;
-    background-color: bisque;
+    background-color: rgb(197, 162, 130);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    overflow-y: scroll;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+#leftAside > section {
+    margin-bottom: 2em;
 }
 
 #gameArea {
-    flex: 5;
-    display: flex;
+    flex: 6;
     background-image: url("../images/LonelyTroll.png");
     background-repeat: no-repeat;
 }
