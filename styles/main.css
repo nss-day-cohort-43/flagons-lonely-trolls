@@ -1,0 +1,30 @@
+html, body {
+    height:100%;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width : 100vw;
+    height : 100%;
+    padding:0;
+    margin:0;
+}
+
+
+#leftAside {
+    flex: 1;
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#gameArea {
+    flex: 5;
+    display: flex;
+    background-image: url("../images/LonelyTroll.png")
+}
