@@ -26,5 +26,6 @@ html, body {
 #gameArea {
     flex: 5;
     display: flex;
-    background-image: url("../images/LonelyTroll.png")
+    background-image: url("../images/LonelyTroll.png");
+    background-repeat: no-repeat;
 }
