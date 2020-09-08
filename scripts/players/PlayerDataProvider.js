@@ -5,7 +5,7 @@ const eventHub = document.querySelector("body")
 const dispatchStateChangeEvent = (player) => {
     const playerStateChangedEvent = new CustomEvent("playerStateChanged", {
         detail: {
-            playerTeamId: parseInt(player.teamId)
+            playerTeamId: player.teamId
         }
     })
 

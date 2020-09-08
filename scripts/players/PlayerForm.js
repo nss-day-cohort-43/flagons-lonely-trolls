@@ -23,9 +23,9 @@ export const renderPlayerForm = (teamList) => {
                         if (teamObj.teamSize < 3) {
                             const openTeam = teamObj.name;
                             const openTeamId = teamObj.id
-                            return`<option value=${openTeamId}>${openTeam}</option>`
+                            return`<option value="${openTeamId}">${openTeam}</option>`
                         }
-                    })               
+                    }).join("")               
                 }
             </select>
         </fieldset>
@@ -63,10 +63,10 @@ eventHub.addEventListener("click", clickEvent => {
                 "name": playerFirstNameInput.value,
                 "lastName": playerLastNameInput.value,
                 "countryOrigin": playerOriginInput.value,
-                "teamId": playerTeamInput.value
+                "teamId": parseInt(playerTeamInput.value)
             }
             savePlayer(newPlayer)
-            // .then(() => teamInput.value = "")
+            .then(() => renderPlayerForm(useTeams()))
         }
     }
 })
