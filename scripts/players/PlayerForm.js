@@ -9,15 +9,15 @@ export const renderPlayerForm = (teamList) => {
             <fieldset class="newPlayerField">
                 <input type="text" name="firstName" id="firstName" maxlength="15" placeholder="First Name">
             </fieldset> 
-            <fieldset id="newPlayerField">
+            <fieldset class="newPlayerField">
                 <input type="text" name="lastName" id="lastName" maxlength="15" placeholder="Last Name">
             </fieldset> 
-            <fieldset id="newPlayerField">
+            <fieldset class="newPlayerField">
                 <input type="text" name="origin" id="origin" maxlength="15" placeholder="Country of Origin">
             </fieldset> 
             <fieldset>
             <select name="team" id="selectOpenTeam">
-                <option value="0">Please select a team...</option>
+                <option value="0" hidden>Please select a team...</option>
                 ${
                     teamList.map( teamObj => {
                         if (teamObj.teamSize < 3) {
@@ -28,7 +28,7 @@ export const renderPlayerForm = (teamList) => {
                     }).join("")               
                 }
             </select>
-        </fieldset>
+            </fieldset>
             <button type="button" id="addPlayerBtn">Add Player to Team</button>
         </form>
         `

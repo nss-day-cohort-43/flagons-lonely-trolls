@@ -3,7 +3,7 @@ import { Player } from "./Player.js"
 
 export const PlayerList = () => {
 
-    const contentElement = document.querySelector("#playerContainer")
+    const contentElement = document.querySelector("#playerForm")
     const playerArray = usePlayers()
 
     // Add a section, and all of the fish to the DOM
