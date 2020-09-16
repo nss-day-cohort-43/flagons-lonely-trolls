@@ -12,7 +12,7 @@ const TeamSelect = (i) => {
                 if (teamObj.teamSize === 3) {
                     const openTeam = teamObj.name;
                     const openTeamId = teamObj.id
-                    return`<option value="${openTeamId}">${openTeam}</option>`
+                    return`<option id ="team--${openTeamId}" value="${openTeam}">${openTeam}</option>`
                 }
             }).join("")               
         }
@@ -29,15 +29,19 @@ export const renderTeamDropdowns = () => {
     contentTarget.innerHTML = teamDropDownHTML
 }
 
-eventHub.addEventListener("change", e => {
+eventHub.addEventListener("change", changeEvent => {
     const chosenTeams = document.querySelectorAll(".participatingTeams")
-    if(e.target.classList[0] === "participatingTeams" && chosenTeams.every(option => { return option.value !== "0"})) {
-        if(classList[0].value !== classList[1].value && classList[2].value !== classList[1].value && classList[0].value !== classList[2].value) {
+    const teamValues = [];
+    for (const team of chosenTeams) {
+        teamValues.push(team.value)
+    }
+    if(changeEvent.target.classList[0] === "participatingTeams" && teamValues.every(option => option !== "0")) {
+        if(chosenTeams[0].value !== chosenTeams[1].value && chosenTeams[2].value !== chosenTeams[1].value && chosenTeams[0].value !== chosenTeams[2].value) {
             const dropdownComplete = new CustomEvent("dropdownsSelected", {
                 detail: {
-                    Team1: chosenTeams[0].value,
-                    Team2: chosenTeams[1].value,
-                    Team3: chosenTeams[2].value
+                    team1: chosenTeams[0].value,
+                    team2: chosenTeams[1].value,
+                    team3: chosenTeams[2].value
                 }
             })
             eventHub.dispatchEvent(dropdownComplete)
