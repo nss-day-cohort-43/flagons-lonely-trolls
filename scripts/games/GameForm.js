@@ -49,10 +49,32 @@ eventHub.addEventListener("roundScored", event => {
         playingTeams[1].totalScore += event.detail.teamTwoScore
         playingTeams[2].totalScore += event.detail.teamThreeScore
         document.querySelector("#scoreContainer").innerHTML = scoreBoard(playingTeams);
+
     } else {
+        playingTeams[0].totalScore += event.detail.teamOneScore
+        playingTeams[1].totalScore += event.detail.teamTwoScore
+        playingTeams[2].totalScore += event.detail.teamThreeScore
+        document.querySelector("#scoreContainer").innerHTML = scoreBoard(playingTeams);
+
+        playingTeams.sort(compare)
+        console.log(playingTeams)
         contentTarget.innerHTML = `
-            <p>You're done</p>
+        <p>You're done</p>
+        <h1>${playingTeams[0].name} win... now they probably won't hang out with me...</h1>
         `
     }
-
+    
 })
+
+
+const compare = (a,b) => {
+    const scoreA = a.totalScore;
+    const scoreB = b.totalScore
+    let comparison = 0;
+    if (scoreA  < scoreB) {
+      comparison = 1;
+    } else if (scoreA > scoreB) {
+      comparison = -1;
+    }
+    return comparison;
+}
