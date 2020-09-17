@@ -12,7 +12,7 @@ const TeamSelect = (i) => {
                 if (teamObj.teamSize === 3) {
                     const openTeam = teamObj.name;
                     const openTeamId = teamObj.id
-                    return`<option id ="team--${openTeamId}" value="${openTeam}">${openTeam}</option>`
+                    return`<option id ="team--${openTeamId}" value="${openTeamId}">${openTeam}</option>`
                 }
             }).join("")               
         }
@@ -39,9 +39,9 @@ eventHub.addEventListener("change", changeEvent => {
         if(chosenTeams[0].value !== chosenTeams[1].value && chosenTeams[2].value !== chosenTeams[1].value && chosenTeams[0].value !== chosenTeams[2].value) {
             const dropdownComplete = new CustomEvent("dropdownsSelected", {
                 detail: {
-                    team1: chosenTeams[0].value,
-                    team2: chosenTeams[1].value,
-                    team3: chosenTeams[2].value
+                    team1: parseInt(chosenTeams[0].value),
+                    team2: parseInt(chosenTeams[1].value),
+                    team3: parseInt(chosenTeams[2].value)
                 }
             })
             eventHub.dispatchEvent(dropdownComplete)
