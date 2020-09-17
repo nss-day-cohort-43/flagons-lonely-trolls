@@ -6,9 +6,7 @@ team:
     "totalScore": 
     "teamSize":
 }
-
 scores.json: 
-
 {
     "id":96
     "date": 12982304981263058174,
@@ -35,9 +33,6 @@ players.json:
     "countryOrigin":
     "teamId":
 }
-
-
-
 local-score:
 {
     "id": 37,
