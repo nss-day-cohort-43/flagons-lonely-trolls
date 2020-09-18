@@ -1,16 +1,14 @@
-export const scoreBoard = (teamsArray) => {
+export const scoreBoard = (scoreArray) => {
     return `
-    <table>
+    <table class="scoreBoard">
+        <h2>Score</h2>
         <tr>
-            <th>Score</th>
-        </tr>
-        <tr>
-            <th>${teamsArray[0].name}</th>
-            <td>${teamsArray[0].totalScore}</td>
-            <th>${teamsArray[1].name}</th>
-            <td>${teamsArray[1].totalScore}</td>
-            <th>${teamsArray[2].name}</th>
-            <td>${teamsArray[2].totalScore}</td>
+            <th>${scoreArray[0].teamName}</th>
+            <td>${scoreArray[0].score}</td>
+            <th>${scoreArray[1].teamName}</th>
+            <td>${scoreArray[1].score}</td>
+            <th>${scoreArray[2].teamName}</th>
+            <td>${scoreArray[2].score}</td>
         </tr>
     </table>
     `
