@@ -6,26 +6,24 @@ team:
     "totalScore": 
     "teamSize":
 }
-
 scores.json: 
-
 {
     "id":96
     "date": 12982304981263058174,
     "teamId": 3
-    "score": 37
+    "score": 3
 },
 {
     "id":96
     "date": 12982304981263058174,
     "teamId": 2
-    "score": 54
+    "score":3
 },
 {
     "id": 104
     "date": 12982304981263058185,
     "teamId": 3
-    "score": 37
+    "score": 9
 }
 players.json:
 {
@@ -35,9 +33,6 @@ players.json:
     "countryOrigin":
     "teamId":
 }
-
-
-
 local-score:
 {
     "id": 37,
