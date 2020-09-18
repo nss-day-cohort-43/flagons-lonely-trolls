@@ -28,3 +28,7 @@ html, body {
     background-image: url("../images/LonelyTroll.png");
     background-repeat: no-repeat;
 }
+
+.scoreBoard {
+    display: flex;
+}
