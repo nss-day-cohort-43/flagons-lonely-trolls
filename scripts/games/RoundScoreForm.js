@@ -29,8 +29,8 @@ eventHub.addEventListener("click", clickEvent => {
             detail: {
                 round: roundNum,
                 teamOneScore: teamScores[0],
-                teamOneScore: teamScores[1],
-                teamOneScore: teamScores[2],
+                teamTwoScore: teamScores[1],
+                teamThreeScore: teamScores[2],
             }
         })
 
