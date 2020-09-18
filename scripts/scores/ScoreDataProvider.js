@@ -10,12 +10,6 @@ export const useScores = () => {
 
 
 export const saveScores = (scoreArray) => {
-    scoreArray.map(scoreObj =>
-        delete scoreObj.teamName
-    )
-
-    console.log("scorearray post delete", scoreArray)
-    
     scoreArray.forEach(scoreObj => {
     return fetch('http://localhost:8088/scores', {
         
@@ -33,8 +27,3 @@ export const saveScores = (scoreArray) => {
 const dispatchScoreChangeEvent = () => {
     eventHub.dispatchEvent(new CustomEvent("scoreStateChanged"))
 }
-
-eventHub.addEventListener("click", clickEvent => {
-
-
-})

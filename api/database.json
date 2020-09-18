@@ -3,14 +3,14 @@
     {
       "name": "Lonely Trolls",
       "dateCreated": 1599581308190,
-      "totalScore": 0,
+      "totalScore": 39,
       "teamSize": 3,
       "id": 1
     },
     {
       "name": "Black Knights",
       "dateCreated": 1599581320114,
-      "totalScore": 56,
+      "totalScore": 28,
       "teamSize": 3,
       "id": 2
     },
@@ -24,7 +24,7 @@
     {
       "name": "The Jeffs",
       "dateCreated": 1599581348348,
-      "totalScore": 0,
+      "totalScore": 23,
       "teamSize": 3,
       "id": 4
     },
@@ -101,5 +101,174 @@
       "id": 9
     }
   ],
-  "scores": []
+  "scores": [
+    {
+      "score": 6,
+      "teamId": 1,
+      "gameDate": 1600448025111,
+      "id": 1
+    },
+    {
+      "score": 4,
+      "teamId": 2,
+      "gameDate": 1600448025111,
+      "id": 2
+    },
+    {
+      "score": 3,
+      "teamId": 4,
+      "gameDate": 1600448025111,
+      "id": 3
+    },
+    {
+      "score": 3,
+      "teamId": 2,
+      "gameDate": 1600448829479,
+      "id": 4
+    },
+    {
+      "score": 2,
+      "teamId": 4,
+      "gameDate": 1600448829479,
+      "id": 5
+    },
+    {
+      "score": 2,
+      "teamId": 1,
+      "gameDate": 1600448829479,
+      "id": 6
+    },
+    {
+      "score": 2,
+      "teamId": 4,
+      "gameDate": 1600448829479,
+      "id": 7
+    },
+    {
+      "score": 3,
+      "teamId": 2,
+      "gameDate": 1600448829479,
+      "id": 8
+    },
+    {
+      "score": 2,
+      "teamId": 1,
+      "gameDate": 1600448829479,
+      "id": 9
+    },
+    {
+      "score": 9,
+      "teamId": 1,
+      "gameDate": 1600449161073,
+      "id": 10
+    },
+    {
+      "score": 6,
+      "teamId": 2,
+      "gameDate": 1600449161073,
+      "id": 11
+    },
+    {
+      "score": 3,
+      "teamId": 4,
+      "gameDate": 1600449161073,
+      "id": 12
+    },
+    {
+      "score": 9,
+      "teamId": 4,
+      "gameDate": 1600449220985,
+      "id": 13
+    },
+    {
+      "score": 6,
+      "teamId": 2,
+      "gameDate": 1600449220985,
+      "id": 14
+    },
+    {
+      "score": 3,
+      "teamId": 1,
+      "gameDate": 1600449220985,
+      "id": 15
+    },
+    {
+      "score": 3,
+      "teamId": 1,
+      "gameDate": 1600449312376,
+      "id": 16
+    },
+    {
+      "score": 6,
+      "teamId": 2,
+      "gameDate": 1600449312376,
+      "id": 17
+    },
+    {
+      "score": 9,
+      "teamId": 4,
+      "gameDate": 1600449312376,
+      "id": 18
+    },
+    {
+      "score": 9,
+      "teamId": 1,
+      "gameDate": 1600449463584,
+      "id": 19
+    },
+    {
+      "score": 5,
+      "teamId": 2,
+      "gameDate": 1600449463584,
+      "id": 20
+    },
+    {
+      "score": 5,
+      "teamId": 4,
+      "gameDate": 1600449463584,
+      "id": 21
+    },
+    {
+      "score": 9,
+      "teamId": 1,
+      "gameDate": 1600449552153,
+      "id": 22
+    },
+    {
+      "score": 6,
+      "teamId": 2,
+      "gameDate": 1600449552153,
+      "id": 23
+    },
+    {
+      "score": 3,
+      "teamId": 4,
+      "gameDate": 1600449552153,
+      "id": 24
+    },
+    {
+      "score": 9,
+      "teamId": 1,
+      "gameDate": 1600449571210,
+      "id": 25
+    },
+    {
+      "score": 5,
+      "teamId": 2,
+      "gameDate": 1600449571210,
+      "id": 26
+    },
+    {
+      "score": 3,
+      "teamId": 4,
+      "gameDate": 1600449571210,
+      "id": 27
+    },
+    {
+      "score": 3,
+      "teamId": 4,
+      "gameDate": 1600449571210,
+      "id": 28
+    }
+  ]
 }

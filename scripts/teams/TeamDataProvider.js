@@ -38,3 +38,15 @@ export const updateTeam = (teamObj) => {
     })
     .then(dispatchStateChangeEvent)
 }
+
+export const updateTeamScores = (teamArray) => {
+    teamArray.forEach(teamObj => {
+    return fetch(`http://localhost:8088/teams/${teamObj.id}`,{
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(teamObj)
+    })
+})
+}
