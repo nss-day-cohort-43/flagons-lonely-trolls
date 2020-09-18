@@ -1,13 +1,13 @@
 const eventHub = document.querySelector("body")
 
-export const RoundScoreForm = teamArray => {
+export const RoundScoreForm = scoreArray => {
     return `
         <form>
-            <label for="firstTeam">${teamArray[0].name}</label><br>
+            <label for="firstTeam">${scoreArray[0].teamName}</label><br>
             <input type="number" name="firstTeam" min="0" max="3" class="teamScoreInput"><br>
-            <label for="secondTeam">${teamArray[1].name}</label><br>
+            <label for="secondTeam">${scoreArray[1].teamName}</label><br>
             <input type="number" name="secondTeam" min="0" max="3" class="teamScoreInput"><br>
-            <label for="thirdTeam">${teamArray[2].name}</label><br>
+            <label for="thirdTeam">${scoreArray[2].teamName}</label><br>
             <input type="number" name="thirdTeam" min="0" max="3" class="teamScoreInput"><br>
             <button type="button" id="roundScoreBtn">Save Round Scores</button>
         </form>
