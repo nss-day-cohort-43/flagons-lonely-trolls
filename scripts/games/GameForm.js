@@ -61,11 +61,21 @@ eventHub.addEventListener("roundScored", event => {
         contentTarget.innerHTML = `
         <p>You're done</p>
         <h1>${playingTeams[0].name} win... now they probably won't hang out with me...</h1>
+        <button type="button" id="submitScore"></button>
         `
     }
     
 })
 
+document.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id === "submitScore") {
+        saveScores()
+
+        document.getElementById("gameContainer").innerHTML = <button type="button" id="startButton">It's OK. <br> You Don't Have to Play with Me Either.</button>
+    })
+} )
+
+export consr startButton 
 
 const compare = (a,b) => {
     const scoreA = a.totalScore;
