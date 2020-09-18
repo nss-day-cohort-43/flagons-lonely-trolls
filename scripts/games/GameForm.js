@@ -28,7 +28,7 @@ eventHub.addEventListener("dropdownsSelected", event => {
 
     const gameDate = Date.now()
 
-    for (let i=0; i<teamIds.length; i++) {
+    for (let i=0; i<3; i++) {
         let newScoreObj = {
             score: 0,
             teamName: teamNames[i],
