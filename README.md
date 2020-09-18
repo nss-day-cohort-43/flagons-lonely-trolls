@@ -54,6 +54,10 @@ The rules of the game were fairly simple, yet allowed for some subtlety.
 * JSON Server
 * GitHub
 
+### Wireframe
+
+[Wireframe](https://miro.com/app/board/o9J_kmESfd0=/)
+
 ### Executing program
 
 * How to run the program
