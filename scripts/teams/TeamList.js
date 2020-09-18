@@ -48,3 +48,10 @@ eventHub.addEventListener("playerStateChanged", event => {
         }
     })
 })
+
+eventHub.addEventListener("scoreStateChanged", () => {
+    getTeams()
+    .then(() => {
+        addTeamsToLeaderboard(useTeams());
+    })
+})

@@ -1,12 +1,12 @@
 import { renderTeamDropdowns } from "../teams/TeamSelect.js"
-import { useTeams } from "../teams/TeamDataProvider.js"
+import { updateTeamScores, useTeams } from "../teams/TeamDataProvider.js"
 import { RoundScoreForm } from "./RoundScoreForm.js"
-
 import {scoreBoard} from "./ScoreBoard.js"
+import { saveScores } from "../scores/ScoreDataProvider.js"
 
 const eventHub = document.querySelector("body")
 let scoreArray = [];
-
+let playingTeams = []
 eventHub.addEventListener("click", e => {
     if(e.target.id === "startButton") {
         renderTeamDropdowns()
@@ -25,6 +25,7 @@ eventHub.addEventListener("dropdownsSelected", event => {
     let teamNames = []
     teamIds.push(teamOne.id, teamTwo.id, teamThree.id)
     teamNames.push(teamOne.name, teamTwo.name, teamThree.name)
+    playingTeams.push(teamOne, teamTwo, teamThree)
 
     const gameDate = Date.now()
 
@@ -69,10 +70,10 @@ eventHub.addEventListener("roundScored", event => {
         scoreArray[2].score += event.detail.teamThreeScore
         document.querySelector("#scoreContainer").innerHTML = scoreBoard(scoreArray);
 
-        scoreArray.sort(compare)
+        let WinningTeamTopArray = scoreArray.slice().sort(compare)
         contentTarget.innerHTML = `
         <p>You're done</p>
-        <h1>${scoreArray[0].teamName} win... <br>now they probably won't hang out with me...</h1>
+        <h1>${WinningTeamTopArray[0].teamName} win... <br>now they probably won't hang out with me...</h1>
         <button type="button" id="submitScore">Save your Score</button>
         `
     }
@@ -81,16 +82,24 @@ eventHub.addEventListener("roundScored", event => {
 
 document.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "submitScore") {
-        saveScores()
-//save score
-//update leaderboard
+        for (let i=0; i<3; i++){
+            playingTeams[i].totalScore += scoreArray[i].score
+            delete scoreArray[i].teamName
+       }
+
+        updateTeamScores(playingTeams)
+        saveScores(scoreArray)
         startButton()
-    }
+        document.getElementById("scoreContainer").innerHTML = ""
+        playingTeams=[]
+        scoreArray = []
+}
 })
 
 export const startButton = () => {
     document.getElementById("gameContainer").innerHTML = `<button type="button" id="startButton">It's OK. <br> You Don't Have to Play with Me Either.</button>`
 }
+
 const compare = (a,b) => {
     const scoreA = a.score;
     const scoreB = b.score
