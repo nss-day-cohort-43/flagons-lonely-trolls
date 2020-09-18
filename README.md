@@ -2,6 +2,18 @@
 
 The purpose of this app is to create a game app that heavily relies on components as well as working in a focused team.
 
+## Learning Objectives
+
+The learning objectives of this project, by the end of the client side course, are the following.
+
+* Identifying and building components
+* Using `fetch` to store and retrieve data from a persistent data store.
+* Handling browser-generated and custom events
+* Understanding asynchronous programming
+* Collecting user input and acting on it
+* Modular CSS
+* Modular JavaScript
+
 ## Description
 
 The user first begins by creating a team and then creating their personal user profile. While creating their user profile they will be asked to choose their forever team. Once there are three teams with three players you can begin the age old game of Truncheons and Flagons! Below you will find the rules to this game.
