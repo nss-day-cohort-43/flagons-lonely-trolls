@@ -22,4 +22,13 @@ switch (detail) {
     teamTwoScore: teamScores[1],
     teamThreeScore: teamScores[2],
 }
+
+"🛡️"
+⚔️
+"👺"
+"👹"
+"🧚🏽‍♀️"
+"🧚🏾"
+
+
 */
