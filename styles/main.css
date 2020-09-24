@@ -51,11 +51,11 @@ button {
 }
 
 #scoreContainer {
-    padding:10px;
-    padding-left:20px
+    /* padding:10px;
+    padding-left:20px; */
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end
 }
 #gameContainer{
