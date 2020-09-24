@@ -72,8 +72,9 @@ eventHub.addEventListener("roundScored", event => {
 
         let WinningTeamTopArray = scoreArray.slice().sort(compare)
         contentTarget.innerHTML = `
-        <p>You're done</p>
-        <h1>${WinningTeamTopArray[0].teamName} win... <br>now they probably won't hang out with me...</h1>
+        <p>You're done...</p>
+        <h1>${WinningTeamTopArray[0].teamName} win...</h1>
+        <p>now they probably won't hang out with me...</p>
         <button type="button" id="submitScore">Save your Score</button>
         `
     }
