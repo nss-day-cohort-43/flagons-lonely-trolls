@@ -3,14 +3,14 @@
     {
       "name": "Lonely Trolls",
       "dateCreated": 1599581308190,
-      "totalScore": 48,
+      "totalScore": 51,
       "teamSize": 3,
       "id": 1
     },
     {
       "name": "Black Knights",
       "dateCreated": 1599581320114,
-      "totalScore": 33,
+      "totalScore": 36,
       "teamSize": 3,
       "id": 2
     },
@@ -24,7 +24,7 @@
     {
       "name": "The Jeffs",
       "dateCreated": 1599581348348,
-      "totalScore": 27,
+      "totalScore": 30,
       "teamSize": 3,
       "id": 4
     },
@@ -305,6 +305,24 @@
       "teamId": 2,
       "gameDate": 1600916023493,
       "id": 34
+    },
+    {
+      "score": 3,
+      "teamId": 4,
+      "gameDate": 1600959675867,
+      "id": 35
+    },
+    {
+      "score": 3,
+      "teamId": 2,
+      "gameDate": 1600959675867,
+      "id": 36
+    },
+    {
+      "score": 3,
+      "teamId": 1,
+      "gameDate": 1600959675867,
+      "id": 37
     }
   ]
 }

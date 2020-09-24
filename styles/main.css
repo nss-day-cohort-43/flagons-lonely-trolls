@@ -3,12 +3,16 @@ html, body {
     margin: 0;
     padding: 0;
 }
+main{
+    display: flex
+}
 
 table, th, td {
-    width: 100%;
+    /* width: 100%; */
   }
   
   th, td {
+    width: auto;
     border: 1px solid black;
     padding: 10px;
     text-align: left;
@@ -30,6 +34,7 @@ button {
     overflow-y: scroll;
     padding: 1em;
     margin-right: 1em;
+    min-width: 250px;
 }
 
 #leftAside > section {
@@ -40,7 +45,9 @@ button {
     flex: 6;
     background-image: url("../images/LonelyTroll.png");
     background-repeat: no-repeat;
+    min-width: 350px;
 }
+
 
 #startButton {
     margin-top: 20%
@@ -48,22 +55,22 @@ button {
 
 .scoreBoard {
     display: flex;
+    vertical-align: baseline;
 }
 
 #scoreContainer {
-    /* padding:10px;
-    padding-left:20px; */
-    width: 50%;
+    /* width: 50%; */
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end
+    justify-content: flex-start;
+    align-items: center;
+    
+    
 }
 #gameContainer{
     padding: 3%;
     width: 50%
-
 }
-/* 
+
 #scoreHeading {
-    padding: 10px;
-} */
+    padding-right: 5px;
+}
