@@ -51,6 +51,8 @@ button {
 }
 
 #scoreContainer {
+    padding:10px;
+    padding-left:20px
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -61,7 +63,7 @@ button {
     width: 50%
 
 }
-
+/* 
 #scoreHeading {
     padding: 10px;
-}
+} */
