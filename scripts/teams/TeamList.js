@@ -34,10 +34,7 @@ const addTeamsToLeaderboard = arrayOfTeams => {
 
 
 eventHub.addEventListener("teamStateChanged", () => {
-    getTeams()
-    .then(() => {
-        addTeamsToLeaderboard(useTeams());
-    })
+    TeamList();
 })
 
 eventHub.addEventListener("playerStateChanged", event => {
@@ -50,8 +47,5 @@ eventHub.addEventListener("playerStateChanged", event => {
 })
 
 eventHub.addEventListener("scoreStateChanged", () => {
-    getTeams()
-    .then(() => {
-        addTeamsToLeaderboard(useTeams());
-    })
+    TeamList()
 })
