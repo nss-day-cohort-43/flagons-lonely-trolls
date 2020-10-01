@@ -31,11 +31,13 @@ input, select {
     border-radius: .25em;
 }
 
-#startButton {
+ #startButton {
 	position: relative;
 	background: #8c6c8a;
     border-radius: .4em;
     padding: 5% 2%;
+    border: none;
+    transition: .5s ease-out
 }
 
 #startButton:after {
@@ -50,9 +52,16 @@ input, select {
 	border-right: 0;
 	border-bottom: 0;
 	margin-top: -1.187em;
-	margin-right: -2.375em;
+    margin-right: -2.375em;
+} 
+#startButton:hover {
+    background: #8c6c8ab0;
+    transform: scale(1.1)
 }
-
+#startButton:after:hover {
+    background: #8c6c8ab0;
+    transform: scale(1.1)
+}
 #container {
     display: flex;
     height: 100%;
