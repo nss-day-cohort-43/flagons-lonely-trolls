@@ -1,7 +1,5 @@
 const eventHub = document.querySelector("body")
 
-const scores = []
-
 const dispatchScoreChangeEvent = () => {
     eventHub.dispatchEvent(new CustomEvent("scoreStateChanged"))
 }
