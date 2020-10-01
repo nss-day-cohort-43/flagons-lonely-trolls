@@ -91,7 +91,7 @@ document.addEventListener("click", clickEvent => {
         updateTeamScores(playingTeams)
         saveScores(scoreArray)
         startButton()
-        document.getElementById("scoreContainer").innerHTML = ""
+        document.getElementById("scoreContainer").innerHTML = "<h1 id='heading'>The Lonely Troll presents: Truncheons & Flagons</h1>"
         playingTeams=[]
         scoreArray = []
 }

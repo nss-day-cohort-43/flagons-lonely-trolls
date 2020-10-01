@@ -3,14 +3,14 @@
     {
       "name": "Lonely Trolls",
       "dateCreated": 1599581308190,
-      "totalScore": 51,
+      "totalScore": 61,
       "teamSize": 3,
       "id": 1
     },
     {
       "name": "Black Knights",
       "dateCreated": 1599581320114,
-      "totalScore": 36,
+      "totalScore": 45,
       "teamSize": 3,
       "id": 2
     },
@@ -24,7 +24,7 @@
     {
       "name": "The Jeffs",
       "dateCreated": 1599581348348,
-      "totalScore": 30,
+      "totalScore": 36,
       "teamSize": 3,
       "id": 4
     },
@@ -323,6 +323,78 @@
       "teamId": 1,
       "gameDate": 1600959675867,
       "id": 37
+    },
+    {
+      "score": 1,
+      "teamId": 2,
+      "gameDate": 1601575973783,
+      "id": 38
+    },
+    {
+      "score": 1,
+      "teamId": 1,
+      "gameDate": 1601575973783,
+      "id": 39
+    },
+    {
+      "score": 1,
+      "teamId": 4,
+      "gameDate": 1601575973783,
+      "id": 40
+    },
+    {
+      "score": 2,
+      "teamId": 1,
+      "gameDate": 1601576050062,
+      "id": 41
+    },
+    {
+      "score": 2,
+      "teamId": 2,
+      "gameDate": 1601576050062,
+      "id": 42
+    },
+    {
+      "score": 2,
+      "teamId": 4,
+      "gameDate": 1601576050062,
+      "id": 43
+    },
+    {
+      "score": 2,
+      "teamId": 2,
+      "gameDate": 1601576091510,
+      "id": 44
+    },
+    {
+      "score": 1,
+      "teamId": 1,
+      "gameDate": 1601576091510,
+      "id": 45
+    },
+    {
+      "score": 1,
+      "teamId": 4,
+      "gameDate": 1601576091510,
+      "id": 46
+    },
+    {
+      "score": 6,
+      "teamId": 1,
+      "gameDate": 1601578522222,
+      "id": 47
+    },
+    {
+      "score": 4,
+      "teamId": 2,
+      "gameDate": 1601578522222,
+      "id": 48
+    },
+    {
+      "score": 2,
+      "teamId": 4,
+      "gameDate": 1601578522222,
+      "id": 49
     }
   ]
 }
