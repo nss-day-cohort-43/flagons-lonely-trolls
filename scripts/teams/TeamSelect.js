@@ -2,13 +2,13 @@ import { useTeams } from "./TeamDataProvider.js"
 
 const eventHub = document.querySelector("body")
 
-const TeamSelect = (i) => {
+const TeamSelect = (index) => {
     const teamList = useTeams()
     return `
-    <select class="participatingTeams" id="selectReadyTeam${i}">
-    <option value="0" hidden>Please select team ${i}...</option>
+    <select class="participatingTeams" id="selectReadyTeam${index}">
+    <option value="0" hidden>Please select team ${index}...</option>
         ${
-            teamList.map( teamObj => {
+            teamList.map(teamObj => {
                 if (teamObj.teamSize === 3) {
                     const openTeam = teamObj.name;
                     const openTeamId = teamObj.id

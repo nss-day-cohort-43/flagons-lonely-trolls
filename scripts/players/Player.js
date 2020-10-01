@@ -1,5 +1,4 @@
-  
-export const Player = (playerObj) => {
+  export const Player = (playerObj) => {
     return `
     <div id="player-${playerObj.id}">
         <ul>

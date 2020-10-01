@@ -1,12 +1,17 @@
 import { renderTeamDropdowns } from "../teams/TeamSelect.js"
 import { updateTeamScores, useTeams } from "../teams/TeamDataProvider.js"
 import { RoundScoreForm } from "./RoundScoreForm.js"
-import {scoreBoard} from "./ScoreBoard.js"
+import { scoreBoard } from "./ScoreBoard.js"
 import { saveScores } from "../scores/ScoreDataProvider.js"
 
 const eventHub = document.querySelector("body")
 let scoreArray = [];
-let playingTeams = []
+let playingTeams = [];
+
+export const startButton = () => {
+    document.getElementById("gameContainer").innerHTML = `<button type="button" id="startButton">It's OK.<br> You Don't Have to Play with Me Either.</button>`
+}
+
 eventHub.addEventListener("click", e => {
     if(e.target.id === "startButton") {
         renderTeamDropdowns()
@@ -23,6 +28,7 @@ eventHub.addEventListener("dropdownsSelected", event => {
 
     let teamIds = []
     let teamNames = []
+
     teamIds.push(teamOne.id, teamTwo.id, teamThree.id)
     teamNames.push(teamOne.name, teamTwo.name, teamThree.name)
     playingTeams.push(teamOne, teamTwo, teamThree)
@@ -81,7 +87,7 @@ eventHub.addEventListener("roundScored", event => {
     
 })
 
-document.addEventListener("click", clickEvent => {
+eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "submitScore") {
         for (let i=0; i<3; i++){
             playingTeams[i].totalScore += scoreArray[i].score
@@ -94,21 +100,18 @@ document.addEventListener("click", clickEvent => {
         document.getElementById("scoreContainer").innerHTML = "<h1 id='heading'>The Lonely Troll presents: Truncheons & Flagons</h1>"
         playingTeams=[]
         scoreArray = []
-}
+    }
 })
-
-export const startButton = () => {
-    document.getElementById("gameContainer").innerHTML = `<button type="button" id="startButton">It's OK. <br> You Don't Have to Play with Me Either.</button>`
-}
 
 const compare = (a,b) => {
     const scoreA = a.score;
     const scoreB = b.score
     let comparison = 0;
+    
     if (scoreA  < scoreB) {
-      comparison = 1;
+        comparison = 1;
     } else if (scoreA > scoreB) {
-      comparison = -1;
+        comparison = -1;
     }
     return comparison;
 }
