@@ -36,8 +36,6 @@ export const renderPlayerForm = (teamList) => {
         document.getElementById("playerForm").innerHTML = form
 }
 
-
-
 export const PlayerFormComponent = () =>{
     getTeams()
     .then(() => {
