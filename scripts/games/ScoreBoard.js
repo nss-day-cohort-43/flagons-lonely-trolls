@@ -1,7 +1,7 @@
 export const scoreBoard = (scoreArray) => {
     return `
     <table class="scoreBoard">
-        <h2>Score</h2>
+        <h2 id="scoreHeading">Score</h2>
         <tr>
             <th>${scoreArray[0].teamName}</th>
             <td>${scoreArray[0].score}</td>
