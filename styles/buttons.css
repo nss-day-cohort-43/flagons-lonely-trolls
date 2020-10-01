@@ -5,13 +5,15 @@ button {
     border-radius: .62em;
     font-family: 'Marcellus', serif;
 }
+
 #startButton {
 	position: relative;
 	background: #8c6c8a;
     border-radius: .4em;
     padding: 5% 2%;
-    border: none;
-    transition: .5s ease-out
+    /* border: none; */
+    transition: .5s ease-out;
+    margin-top: 20%
 }
 
 #startButton:after {

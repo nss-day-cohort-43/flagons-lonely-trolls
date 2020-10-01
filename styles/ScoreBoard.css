@@ -1,0 +1,19 @@
+th, td {
+    width: auto;
+    border: 1px solid black;
+    padding: .62em;
+    text-align: left;
+}
+
+.scoreBoard {
+    display: flex;
+    vertical-align: baseline;
+}
+
+#scoreContainer {
+    /* width: 50%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+

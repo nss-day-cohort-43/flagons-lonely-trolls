@@ -1,5 +1,6 @@
 @import 'buttons.css';
 @import 'ScrollBar.css';
+@import 'ScoreBoard.css';
 
 html, body {
     height: 100%;
@@ -11,27 +12,15 @@ main{
     display: flex
 }
 
-table, th, td {
-    /* width: 100%; */
-  }
-  
-  th, td {
-    width: auto;
-    border: 1px solid black;
-    padding: .62em;
-    text-align: left;
-  }
-
-
 input, select {
     font-family: 'Marcellus', serif;
     border-radius: .25em;
 }
 
-
 #container {
     display: flex;
     height: 100%;
+    transition: .5s ease-out;
 }
 
 #leftAside {
@@ -42,7 +31,7 @@ input, select {
     overflow-y: scroll;
     padding: 1em;
     margin-right: 1em;
-    min-width: 250px;
+    min-width: 260px;
     background-image: linear-gradient(to right, #324f7b, #474566, #6b404f);
     color: whitesmoke
 }
@@ -60,29 +49,27 @@ input, select {
     min-width: 350px
 }
 
-
-#startButton {
-    margin-top: 20%
-}
-
-.scoreBoard {
-    display: flex;
-    vertical-align: baseline;
-}
-
-#scoreContainer {
-    /* width: 50%; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    
-}
 #gameContainer{
     padding: 3%;
     width: 50%
 }
 
-#scoreHeading {
-    padding-right: 5px;
+@media screen and (max-width: 500px) {
+    #gameArea {
+        flex: 6;
+        background-image: url("../images/LonelyTroll.png");
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: center;
+        min-width: 350px
+    }
+    #leftAside {
+        min-width: 0;
+        width:1px
+
+    }
+
+    #leftAside:hover {
+        min-width:275px;
+    }
 }
