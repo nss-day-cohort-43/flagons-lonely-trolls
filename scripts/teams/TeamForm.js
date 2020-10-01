@@ -1,5 +1,7 @@
 import { saveTeam } from "./TeamDataProvider.js"
 
+const eventHub = document.querySelector("body")
+
 export const TeamFormComponent = () => {
     const form = `
         <form>
@@ -13,8 +15,6 @@ export const TeamFormComponent = () => {
         document.getElementById("teamForm").innerHTML += form
 }
 
-const eventHub = document.querySelector("body")
-
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "createTeamBtn") {
         const teamInput = document.querySelector("#teamName")
@@ -26,7 +26,7 @@ eventHub.addEventListener("click", clickEvent => {
                 "teamSize": 0
             }
             saveTeam(newTeam)
-            .then(() => teamInput.value = "")
+            teamInput.value = ""
         }
     }
 })

@@ -36,21 +36,17 @@ export const renderPlayerForm = (teamList) => {
         document.getElementById("playerForm").innerHTML = form
 }
 
-
-
 export const PlayerFormComponent = () =>{
     getTeams()
     .then(() => {
         renderPlayerForm(useTeams());
     })
-
-    eventHub.addEventListener("teamStateChanged", () => {
-        getTeams()
-        .then(() => {
-            renderPlayerForm(useTeams());
-        })
-    })
 }
+
+eventHub.addEventListener("teamStateChanged", () => {
+    PlayerFormComponent()
+})
+
 
 eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "addPlayerBtn") {

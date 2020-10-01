@@ -24,7 +24,6 @@ export const saveTeam = team => {
         },
         body: JSON.stringify(team)
     })
-    .then(getTeams)
     .then(dispatchStateChangeEvent)
 }
 
