@@ -55,14 +55,14 @@ input, select {
 }
 
 @media screen and (max-width: 500px) {
-    #gameArea {
+    /* #gameArea {
         flex: 6;
         background-image: url("../images/LonelyTroll.png");
         background-repeat: no-repeat;
         background-size: 200px;
         background-position: center;
         min-width: 350px
-    }
+    } */
     #leftAside {
         min-width: 0;
         width:1px
