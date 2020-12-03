@@ -11,7 +11,6 @@ button {
 	background: #8c6c8a;
     border-radius: .4em;
     padding: 5% 2%;
-    /* border: none; */
     transition: .5s ease-out;
     margin-top: 20%
 }
