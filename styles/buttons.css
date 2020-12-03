@@ -1,0 +1,39 @@
+button {
+    margin: 1em;
+    background-color: #8c6c8a;
+    color: whitesmoke;
+    border-radius: .62em;
+    font-family: 'Marcellus', serif;
+}
+
+#startButton {
+	position: relative;
+	background: #8c6c8a;
+    border-radius: .4em;
+    padding: 5% 2%;
+    transition: .5s ease-out;
+    margin-top: 20%
+}
+
+#startButton:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2.375em solid transparent;
+	border-left-color: #8c6c8a;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -1.187em;
+    margin-right: -2.375em;
+} 
+#startButton:hover {
+    background: #8c6c8ab0;
+    transform: scale(1.1)
+}
+#startButton:after:hover {
+    background: #8c6c8ab0;
+    transform: scale(1.1)
+}

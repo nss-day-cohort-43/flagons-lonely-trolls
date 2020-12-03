@@ -3,21 +3,21 @@
     {
       "name": "Lonely Trolls",
       "dateCreated": 1599581308190,
-      "totalScore": 66,
+      "totalScore": 71,
       "teamSize": 3,
       "id": 1
     },
     {
       "name": "Black Knights",
       "dateCreated": 1599581320114,
-      "totalScore": 45,
+      "totalScore": 48,
       "teamSize": 3,
       "id": 2
     },
     {
       "name": "Happy Hippos",
       "dateCreated": 1599581333926,
-      "totalScore": 4,
+      "totalScore": 7,
       "teamSize": 3,
       "id": 3
     },
@@ -448,6 +448,30 @@
       "teamId": 4,
       "gameDate": 1601581495449,
       "id": 52
+    },
+    {
+      "score": 5,
+      "teamId": 1,
+      "gameDate": 1606962087128,
+      "id": 53
+    },
+    {
+      "score": 3,
+      "teamId": 3,
+      "gameDate": 1606962087128,
+      "id": 54
+    },
+    {
+      "score": 3,
+      "teamId": 2,
+      "gameDate": 1606962087128,
+      "id": 55
+    },
+    {
+      "score": 5,
+      "teamId": 1,
+      "gameDate": 1606962087128,
+      "id": 56
     }
   ]
 }
