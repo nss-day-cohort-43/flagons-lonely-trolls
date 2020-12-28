@@ -1,0 +1,23 @@
+{
+  "name": "flagons-lonely-trolls",
+  "version": "1.0.0",
+  "description": "The purpose of this app is to create a game app that heavily relies on components as well as working in a focused team.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nss-day-cohort-43/flagons-lonely-trolls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-day-cohort-43/flagons-lonely-trolls/issues"
+  },
+  "homepage": "https://github.com/nss-day-cohort-43/flagons-lonely-trolls#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
