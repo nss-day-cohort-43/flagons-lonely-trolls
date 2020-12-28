@@ -2,6 +2,11 @@
 
 The purpose of this app is to create a game app that heavily relies on components as well as working in a focused team.
 
+
+https://shrouded-cove-81557.herokuapp.com/
+
+
+
 ## Learning Objectives
 
 The learning objectives of this project, by the end of the client side course, are the following.
