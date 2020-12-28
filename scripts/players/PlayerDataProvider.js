@@ -17,12 +17,12 @@ export const usePlayers = () => {
 }
 
 export const savePlayer = player => {
-    return fetch('http://localhost:8088/players', {
+    return fetch('/players', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(player)
     })
-    .then(() => dispatchStateChangeEvent(player))
+        .then(() => dispatchStateChangeEvent(player))
 }

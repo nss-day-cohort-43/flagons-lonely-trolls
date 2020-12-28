@@ -6,14 +6,14 @@ const dispatchScoreChangeEvent = () => {
 
 export const saveScores = (scoreArray) => {
     scoreArray.forEach(scoreObj => {
-        return fetch('http://localhost:8088/scores', {
-            
+        return fetch('/scores', {
+
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(scoreObj)
         })
-        .then(dispatchScoreChangeEvent)
+            .then(dispatchScoreChangeEvent)
     })
 }
